@@ -12,3 +12,9 @@ puts "The second student is #{students[1]}."
 students.push("Roz")
 
 puts "The last student is #{students.last}."
+
+puts students.find{|user| user=="Arthur"}
+
+students.delete_if{|x| x == "Arthur"}
+
+puts students

@@ -6,12 +6,16 @@ z = 5
 
 x = x + y
 # What are x, y, and z right now?
+# x = 5
 
 y = x + z
 # What are x, y, and z right now?
+# y = 10
 
 z = x + y
 # What are x, y, and z right now?
+# z = 15
+
 
 # ==============================================================================
 
@@ -19,15 +23,15 @@ z = x + y
 # For any line that is valid, what would the output be?
 # For any line that is invalid, what would the error message complain about?
 
-puts "howdy".capitalize
-puts 2 + 3
+puts "howdy".capitalize #no
+puts 2 + 3 #yes
 puts 2.even?
-puts "howdy".odd?
-puts "howdy" + 2
+#puts "howdy".odd? #no
+#puts "howdy" + 2 #no
 puts "howdy".capitalize.reverse
 puts "howdy".capitalize.reverse.length
-puts "howdy".capitalize.reverse.odd?
-puts "howdy".capitalize.reverse.even?
+#puts "howdy".capitalize.reverse.odd? #no
+#puts "howdy".capitalize.reverse.even? #no
 puts "howdy".capitalize.reverse.length.odd?
 puts "howdy".capitalize.reverse.length.even?
 
@@ -49,14 +53,14 @@ puts first
 
 puts("hello".gsub("l", "z"))
 puts "hello".gsub("l", "z")
-puts("hello".gsub("l", "z")
+#puts("hello".gsub("l", "z") #no. missing )
 puts "hello".gsub "l", "z"
-puts "hello".gsub ("l", "z")
+#puts "hello".gsub ("l", "z") # no
 
 # ==============================================================================
 
 # What's wrong with the following?
-
+# == instead of =
 password = "football"
 
 if password = "hockey"

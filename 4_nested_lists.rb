@@ -28,3 +28,15 @@ puts "Third Level"
 puts "==========="
 puts instructors[1]["first_name"].class # => String
 puts instructors[1]["first_name"] # => Arjun
+
+puts "Let's try some shit"
+puts "==================="
+ah = { "first_name" => "Antonio",     "last_name" => "Herbst" }
+instructors.push(ah)
+puts instructors.last["last_name"]
+#puts instructors.select{|user| user["first_name"]=="Raghu"}["last_name"]
+puts instructors.select{|user| user["first_name"]=="Raghu"}
+#How do I select only the last name after a seach?
+puts instructors.find{|user| user["first_name"]=="Raghu"}["last_name"]
+#So.. what is the real diff between find and select?
+
